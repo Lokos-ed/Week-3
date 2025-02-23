@@ -8,7 +8,11 @@
 </head>
 <body>
     
-    <!---->
+    <!--The class is creating a navbar that wraps when the screen is small. The text is white because of navbar-dark and bg-dark makes the color of the navbar dark.-->
+    <!--Navbar brand is referring to the big title at the beginning (left) of the navbar, the href is linking the text back to the main page.-->
+    <!--The third line creates the button that makes the navbar open and close when the screen is small enough for it to trigger. The fourth line gives it the three horizontal line icon-->
+    <!--The div tells the program which contents to put into the navbar dropdown menu.-->
+    <!--The unordered list's class makes the list elements part of the navbar. The nav-item active makes the text a brighter color while the nav-item makes the text a more faded color.-->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">Week 3</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aira-label="Toggle navigation">
@@ -23,13 +27,12 @@
                     <a class="nav-link" href="form.html">Form</a>
                 </li>
                 </a>
-                </div>
             </ul>
         </div>
     </nav>
 
 
-
+<!--These two script commands tell the program to use the installed bootstrap functions when referencing certain classes like nav-item active-->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
