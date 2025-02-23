@@ -9,7 +9,7 @@
 <body>
 
 
-    <!---->
+    
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">Week 3</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aira-label="Toggle navigation">
@@ -28,7 +28,27 @@
         </div>
     </nav>
 
-    
+    <!--form-row creates a form row, form group applies a bottom margin, col stacks the elements before the breaking point (md) and 6 is the width of the box.-->
+    <!--the for= creates an ID that can be assigned to an element later.-->
+    <!--input type determines what type of input will be allowed by the website, form-control makes the box span across the screen, the id ties the label to the input box, the placeholder shows the text when there is nothing in the box-->
+    <!--the button type=submit tells the program what kind of button to create and the btn-primary determines what color the button is. the text after the btn-primary shows the text inside the button.-->
+    <form>
+        <div class="form-row">
+            <div class="form group col-md-6">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputPassword">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputPin">Pin</label>
+                <input type="number" class="form-control" id="inputPin" placeholder="Pin">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
     
     
         <script src="node_modules/jquery/dist/jquery.js"></script>
